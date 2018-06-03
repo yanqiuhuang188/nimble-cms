@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.likeep</groupId>
-	<artifactId>nimble-cms</artifactId>
+	<groupId>com.nimble</groupId>
+	<artifactId>cms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -51,8 +51,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.likeep</groupId>
-			<artifactId>nimble-common</artifactId>
+			<groupId>com.nimble</groupId>
+			<artifactId>common</artifactId>
 			<version>1.0.0-DEV-SNAPSHOT</version>
 		</dependency>
 
@@ -63,6 +63,25 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>com.nimble</groupId>
+				<artifactId>refresh-reference-maven-plugin</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<!--<executions>
+					<execution>
+						<id>attach-source</id>
+						<goals>
+							<goal></goal>
+						</goals>
+					</execution>
+				</executions>-->
+				<configuration>
+					<paths>
+						<path>${settings.localRepository}\com\nimble\nimble-common</path>
+					</paths>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
