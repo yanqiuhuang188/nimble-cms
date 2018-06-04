@@ -1,4 +1,4 @@
-package com.likeep.nimble.cms;
+package com.nimble.cms;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
