@@ -52,7 +52,7 @@
 
 		<dependency>
 			<groupId>com.nimble</groupId>
-			<artifactId>common</artifactId>
+			<artifactId>base</artifactId>
 			<version>1.0.0-DEV-SNAPSHOT</version>
 		</dependency>
 
