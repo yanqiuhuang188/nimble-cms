@@ -24,6 +24,11 @@
 /nbdist/
 /.nb-gradle/
 
-
 ### React ###
-src/main/resources/static/node_modules
+src/main/resources/antd/node_modules
+
+### Front End ###
+src/main/resources/static/index.*.css
+src/main/resources/static/index.*.js
+src/main/resources/static/index.html
+src/main/resources/static/favicon.png
