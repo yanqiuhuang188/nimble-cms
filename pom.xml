@@ -62,30 +62,22 @@
 	</dependencies>
 
 	<build>
+		<resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>static</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-			<plugin>
-				<groupId>com.nimble</groupId>
-				<artifactId>refresh-reference-maven-plugin</artifactId>
-				<version>1.0-SNAPSHOT</version>
-				<!--<executions>
-					<execution>
-						<id>attach-source</id>
-						<goals>
-							<goal></goal>
-						</goals>
-					</execution>
-				</executions>-->
-				<configuration>
-					<paths>
-						<path>${settings.localRepository}\com\nimble\nimble-common</path>
-					</paths>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
